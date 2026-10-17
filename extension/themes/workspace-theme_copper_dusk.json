@@ -1,0 +1,300 @@
+{
+  "name": "Copper Dusk",
+  "baseTheme": "carbonGrey100",
+  "properties": {
+    "defaultLocale": "Default",
+    "fredIsRed": true,
+    "defaultZoom": "1"
+  },
+  "layout": {
+    "pageSize": {
+      "width": 1750,
+      "height": 900
+    },
+    "layoutPositioning": "absolute",
+    "fitPage": false
+  },
+  "authoringPalette": {
+    "backgrounds": {
+      "primary": "#1A1310",
+      "secondary": "#241C17"
+    },
+    "accents": [
+      "#D4893F",
+      "#E8A862",
+      "#C0392B",
+      "#2ECC71",
+      "#3498DB",
+      "#F1C40F",
+      "#9B59B6",
+      "#B87333"
+    ]
+  },
+  "semantic": {
+    "backgrounds": {
+      "dashboard": "#1A1310",
+      "tab": "#1A1310",
+      "surface": "#241C17",
+      "surfaceAlt": "#1A1310",
+      "rowHeader": "#D4893F",
+      "columnHeader": "#D4893F",
+      "data": "#241C17",
+      "spacer": "#241C17",
+      "grid": "transparent",
+      "syncTile": "transparent",
+      "shape": "#2E2420"
+    },
+    "neutrals": {
+      "border": "#3D3028",
+      "text": "#F0E6DA",
+      "mutedText": "#8B7968",
+      "headerText": "#BEA68F",
+      "appBar": "#100C0A",
+      "ghostBorder": "#504030"
+    },
+    "accents": {
+      "primary": "#D4893F",
+      "secondary": "#E8A862",
+      "tertiary": "#B87333",
+      "interactive": "#D4893F",
+      "highlight": "#2E2218",
+      "selection": "#3D2E20",
+      "negative": "#C0392B",
+      "chartSeries": [
+        "#D4893F",
+        "#E8A862",
+        "#C0392B",
+        "#2ECC71",
+        "#3498DB",
+        "#F1C40F",
+        "#9B59B6"
+      ]
+    },
+    "typography": {
+      "fonts": {
+        "body": "Poppins-Light",
+        "ui": "Poppins-Regular",
+        "heading": "Poppins-Bold",
+        "grid": "IBMPlexSans-Regular",
+        "rowHeader": "IBMPlexSans-Bold"
+      },
+      "scale": {
+        "widgetHeading": {
+          "size": "15px",
+          "weight": "700"
+        },
+        "body": {
+          "size": "14px",
+          "weight": "400"
+        },
+        "caption": {
+          "size": "12px",
+          "weight": "400"
+        },
+        "button": {
+          "size": "14px",
+          "weight": "500"
+        },
+        "selector": {
+          "size": "16px",
+          "weight": "400",
+          "color": "#FFFFFF"
+        },
+        "gridCell": {
+          "size": "13px",
+          "weight": "400"
+        },
+        "kpiValue": {
+          "size": "24px",
+          "weight": "400"
+        }
+      }
+    },
+    "radii": {
+      "card": 10,
+      "button": 20,
+      "text": 6,
+      "shape": 4
+    }
+  },
+  "visuals": {
+    "liveByVisId": {
+      "pasinglecell": {
+        "showTitle": false,
+        "titleHtml": {
+          "translationTable": {
+            "Default": "\u003cdiv class=\"widgetTitlesmallTitle\"\u003e\u003cdiv class=\"textArea\"\u003e\u003cspan class=\"textFittedresponsiveColorresponsiveFontSizeresponsiveFontFamily\"\u003e\u003cp style=\"text-align: center;\"\u003e\u003cspan style=\"font-size: 16px;\"\u003eClick to edit title\u003c/span\u003e\u003c/p\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e"
+          }
+        },
+        "responsiveTitle": {
+          "translationTable": {
+            "Default": "Click to edit title"
+          }
+        },
+        "fillColor": "color1",
+        "borderColor": "color2",
+        "borderRadius": 10
+      }
+    },
+    "charts": {
+      "defaults": {
+        "showTitle": true,
+        "properties": {
+          "widget.legend.position": "bottom",
+          "widget.legend.splitter": false,
+          "widget.legend.titleVisible": false
+        }
+      },
+      "cartesianDefaults": {
+        "properties": {
+          "itemAxis.title.visible": false,
+          "valueAxis.title.visible": false,
+          "itemAxis.gridLines.visible": true,
+          "itemAxis.ticks.labels.visible": true,
+          "valueAxis.ticks.labels.visible": true,
+          "itemAxis.line.visible": false,
+          "valueAxis.line.visible": false,
+          "valueAxis.gridLines.dashPattern.type": "longDash",
+          "itemAxis.gridLines.dashPattern.type": "longDash"
+        }
+      },
+      "pieDefaults": {
+        "globalFormat": {
+          "ZerosOption": "AUTO",
+          "ScalingFactor": 1,
+          "Notation": "COMPACTSHORT",
+          "Units": {
+            "UnitType": "BASE"
+          },
+          "Precision": {
+            "MaxFraction": 1,
+            "MinFraction": 1
+          },
+          "GroupingStrategy": "AUTO",
+          "SignDisplay": "AUTO",
+          "Locale": "en",
+          "selectedFormat": "none"
+        },
+        "properties": {
+          "widget.legend.position": "right",
+          "donut.hole.radius": 0.75,
+          "label.percentage": true,
+          "labels.visible": true
+        }
+      },
+      "byVisId": {
+        "com.ibm.vis.rave2line": {
+          "properties": {
+            "lineWithPoints.symbol": "donutPlus",
+            "interpolate": "cardinal",
+            "valueLabels.visible": false
+          }
+        },
+        "com.ibm.vis.rave2bundlearea": {
+          "properties": {
+            "widget.legend.display": false,
+            "lineWithPoints.symbol": "donutPlus",
+            "interpolate": "cardinal",
+            "valueLabels.visible": false
+          }
+        },
+        "com.ibm.vis.rave2bundlebar": {
+          "properties": {
+            "valueLabels.visible": true,
+            "itemAxis.ticks.labels.alignment": "left"
+          }
+        },
+        "com.ibm.vis.rave2bundlecolumn": {
+          "properties": {
+            "valueLabels.visible": false
+          }
+        },
+        "com.ibm.vis.rave2bundlepie": {
+          "properties": {
+            "inner.label.title": {
+              "translationTable": {
+                "Default": " "
+              }
+            }
+          }
+        }
+      }
+    },
+    "mdv": {
+      "genericProperties": {
+        "displayMode": "grid",
+        "drawBorderLines": false,
+        "drawZebraStrips": false,
+        "showInnerBox": false,
+        "isColorCells": false,
+        "isGridEditable": true,
+        "boldConsolidation": true,
+        "abbreviateNumbers": true,
+        "useCellFontSize": true,
+        "isColumnIndent": true,
+        "isRowIndent": true,
+        "isShowExpandCollapseColumns": true,
+        "isShowExpandCollapseRows": true,
+        "UseColumnFocusedCharting": false
+      }
+    },
+    "syncTile": {
+      "data": {
+        "hasSearchBar": true,
+        "multipleSelection": false,
+        "showHeader": false,
+        "showIcon": false,
+        "isShowOverflowMenu": false
+      }
+    },
+    "singleCell": {
+      "genericProperties": {
+        "dimensionOverview_name": false,
+        "dimensionOverview_iconography": true,
+        "dimensionOverview_contextinformation": false,
+        "dimensionOverview_sectionheaders": false,
+        "dimensionOverview_sectionicons": false,
+        "displayMode": "grid",
+        "syncInfo": {},
+        "boldConsolidation": true,
+        "CommonAxisRange": true,
+        "drawBorderLines": false,
+        "isColorCells": false,
+        "isColumnIndent": true,
+        "isMemberSelectUseRowHeader": false,
+        "isDeferredRecalcOnLeafUpdates": false,
+        "isRowIndent": true,
+        "isAutomaticRowHeaderWidth": true,
+        "isShowExpandCollapseRows": true,
+        "isShowExpandCollapseColumns": true,
+        "UseColumnFocusedCharting": false,
+        "rowHeaderWidthValue": {
+          "0": 140
+        },
+        "tableStyle": "gridSummary",
+        "isZoom80": null,
+        "hideColsHeader": true,
+        "hideRowsHeader": true,
+        "visible": false,
+        "isGridEditable": false,
+        "abbreviateNumbers": true,
+        "allowConsolidationTypeIn": false,
+        "showInnerBox": false,
+        "useCellFontSize": true
+      },
+      "sections": {
+        "DataCell": {
+          "font-size": "28"
+        }
+      }
+    },
+    "image": {
+      "objectFit": "contain"
+    },
+    "conditionalFormatting": {
+      "paletteId": "userPaletteColor",
+
+      "rules": []
+    }
+  }
+}

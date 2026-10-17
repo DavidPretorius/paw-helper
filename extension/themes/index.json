@@ -1,0 +1,68 @@
+[
+  {
+    "id": "workspace-theme-01",
+    "name": "Sleek Finance",
+    "file": "themes/workspace-theme_finance_sleek.json",
+    "description": "Sleek Finance theme authored as a semantic source theme, compiled into PAW-friendly styling with Carbon Grey 10, rounded cards, and Poppins typography."
+  },
+  {
+    "id": "workspace-theme-linear",
+    "name": "Linear Dark",
+    "file": "themes/workspace-theme_linear.json",
+    "description": "Dark theme inspired by Linear.app. Layered charcoal surfaces with signature indigo-purple accents and sharp-medium card radius."
+  },
+  {
+    "id": "workspace-theme-artemis",
+    "name": "Artemis",
+    "file": "themes/workspace-theme_artemis.json",
+    "description": "Mission-control dark theme inspired by artemislivetracker.com, with space-black surfaces, telemetry cyan highlights, warning orange accents, and cool neon status colors."
+  },
+  {
+    "id": "workspace-theme-stripe",
+    "name": "Stripe Light",
+    "file": "themes/workspace-theme_stripe.json",
+    "description": "Clean light theme inspired by Stripe. Blue-white surfaces with Stripe violet as the primary accent and pill buttons."
+  },
+  {
+    "id": "workspace-theme-figma",
+    "name": "Figma Void",
+    "file": "themes/workspace-theme_figma.json",
+    "description": "Deep black theme inspired by Figma. True-black canvas with vibrant purple and neon lime-yellow accents and Figma-style chip radii."
+  },
+  {
+    "id": "workspace-theme-notion",
+    "name": "Notion Warm",
+    "file": "themes/workspace-theme_notion.json",
+    "description": "Warm light theme inspired by Notion. Cream-white surfaces with teal as the primary accent and square card edges."
+  },
+  {
+    "id": "workspace-theme-parchment",
+    "name": "Parchment",
+    "file": "themes/workspace-theme_parchment.json",
+    "description": "Warm beige light theme with aged-parchment surfaces and amber-caramel accents."
+  },
+  {
+    "id": "workspace-theme-forest",
+    "name": "Forest Dark",
+    "file": "themes/workspace-theme_forest.json",
+    "description": "Deep forest dark theme with layered green-black surfaces, vibrant emerald accents, and pill buttons."
+  },
+  {
+    "id": "workspace-theme-copper-dusk",
+    "name": "Copper Dusk",
+    "file": "themes/workspace-theme_copper_dusk.json",
+    "description": "Warm dark theme with ember-brown surfaces, copper highlights, and a dusk-toned accent palette."
+  },
+  {
+    "id": "workspace-theme-nordic-banking",
+    "name": "Nordic Banking",
+    "file": "themes/workspace-theme_nordic_banking.json",
+    "description": "Crisp banking-inspired light theme with soft grey surfaces, white cards, and disciplined navy-blue accents."
+  },
+  {
+    "id": "workspace-theme-swiss-mono",
+    "name": "Swiss Mono",
+    "file": "themes/workspace-theme_swiss_mono.json",
+    "description": "Minimal Swiss-style light theme with monochrome foundations and sharp editorial red accents."
+  }
+]

@@ -1,0 +1,382 @@
+{
+  "name": "Notion Warm",
+  "baseTheme": "carbonGrey10",
+  "properties": {
+    "defaultLocale": "Default",
+    "fredIsRed": true,
+    "defaultZoom": "1"
+  },
+  "layout": {
+    "pageSize": {
+      "width": 1750,
+      "height": 900
+    },
+    "layoutPositioning": "absolute",
+    "fitPage": false
+  },
+  "authoringPalette": {
+    "backgrounds": {
+      "primary": "#F7F6F3",
+      "secondary": "#FFFFFF"
+    },
+    "accents": [
+      "#1D546D",
+      "#48B3AF",
+      "#0F7B6C",
+      "#E03E3E",
+      "#9065B0",
+      "#C77B48",
+      "#448361",
+      "#4ECDE6"
+    ]
+  },
+  "branding": {
+    "logo": {
+      "url": "https://www.intito.com/hs-fs/hubfs/Initito%20brand%20asstets/Intito-Logo-FINAL.png?width=300\u0026height=55\u0026name=Intito-Logo-FINAL.png",
+      "width": 300,
+      "height": 60,
+      "top": 0,
+      "left": 0,
+      "objectFit": "contain"
+    }
+  },
+  "semantic": {
+    "backgrounds": {
+      "dashboard": "#F7F6F3",
+      "tab": "#F7F6F3",
+      "surface": "#FFFFFF",
+      "surfaceAlt": "#F7F6F3",
+      "rowHeader": "#1D546D",
+      "columnHeader": "#1D546D",
+      "data": "#FFFFFF",
+      "spacer": "#FFFFFF",
+      "grid": "transparent",
+      "syncTile": "transparent",
+      "shape": "#FFFFFF"
+    },
+    "neutrals": {
+      "border": "#E9E9E7",
+      "text": "#37352F",
+      "mutedText": "#9B9A97",
+      "headerText": "#6B6965",
+      "appBar": "#2D2C28",
+      "ghostBorder": "#C0BFB9"
+    },
+    "accents": {
+      "primary": "#061E29",
+      "secondary": "#4ECDE6",
+      "tertiary": "#ABDFF1",
+      "interactive": "#2EAADC",
+      "highlight": "#EBF9FF",
+      "selection": "#D5F1FB",
+      "negative": "#E03E3E",
+      "chartSeries": [
+        "#1D546D",
+        "#48B3AF",
+        "#0F7B6C",
+        "#E03E3E",
+        "#9065B0",
+        "#C77B48",
+        "#448361"
+      ]
+    },
+    "typography": {
+      "fonts": {
+        "body": "Poppins-Light",
+        "ui": "Poppins-Regular",
+        "heading": "Poppins-Bold",
+        "grid": "IBMPlexSans-Light",
+        "rowHeader": "IBMPlexSans-Regular"
+      },
+      "scale": {
+        "widgetHeading": {
+          "size": "14px",
+          "weight": "700"
+        },
+        "body": {
+          "size": "14px",
+          "weight": "400"
+        },
+        "caption": {
+          "size": "12px",
+          "weight": "400"
+        },
+        "button": {
+          "size": "14px",
+          "weight": "400"
+        },
+        "selector": {
+          "size": "16px",
+          "weight": "400"
+        },
+        "gridCell": {
+          "size": "12px",
+          "weight": "400"
+        },
+        "kpiValue": {
+          "size": "20px",
+          "weight": "400"
+        }
+      }
+    },
+    "radii": {
+      "card": 4,
+      "button": 4,
+      "text": 3,
+      "shape": 0
+    }
+  },
+  "visuals": {
+    "liveByVisId": {
+      "pasinglecell": {
+        "showTitle": false,
+        "titleHtml": {
+          "translationTable": {
+            "Default": "\u003cdiv class=\"widgetTitlesmallTitle\"\u003e\u003cdiv class=\"textArea\"\u003e\u003cspan class=\"textFittedresponsiveColorresponsiveFontSizeresponsiveFontFamily\"\u003e\u003cp style=\"text-align: center;\"\u003e\u003cspan style=\"font-size: 16px;\"\u003eClick to edit title\u003c/span\u003e\u003c/p\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e"
+          }
+        },
+        "responsiveTitle": {
+          "translationTable": {
+            "Default": "Click to edit title"
+          }
+        },
+        "fillColor": "color1",
+        "borderColor": "color2",
+        "borderRadius": 4
+      },
+      "pacubeviewer": {
+        "showTitle": false,
+        "fillColor": "transparent",
+        "borderColor": "transparent",
+        "borderRadius": 4
+      }
+    },
+    "charts": {
+      "defaults": {
+        "showTitle": false,
+        "properties": {
+          "widget.legend.position": "top",
+          "widget.legend.splitter": false,
+          "widget.legend.titleVisible": false
+        }
+      },
+      "cartesianDefaults": {
+        "properties": {
+          "itemAxis.title.visible": false,
+          "valueAxis.title.visible": false,
+          "itemAxis.gridLines.visible": true,
+          "itemAxis.ticks.labels.visible": true,
+          "valueAxis.ticks.labels.visible": true,
+          "itemAxis.line.visible": true,
+          "valueAxis.line.visible": true,
+          "valueAxis.gridLines.dashPattern.type": "dot",
+          "itemAxis.gridLines.dashPattern.type": "dot"
+        }
+      },
+      "pieDefaults": {
+        "globalFormat": {
+          "ZerosOption": "AUTO",
+          "ScalingFactor": 1,
+          "Notation": "COMPACTSHORT",
+          "Units": {
+            "UnitType": "BASE"
+          },
+          "Precision": {
+            "MaxFraction": 1,
+            "MinFraction": 1
+          },
+          "GroupingStrategy": "AUTO",
+          "SignDisplay": "AUTO",
+          "Locale": "en",
+          "selectedFormat": "none"
+        },
+        "properties": {
+          "widget.legend.position": "bottom",
+          "donut.hole.radius": 0.7,
+          "label.percentage": true,
+          "labels.visible": true
+        }
+      },
+      "byVisId": {
+        "com.ibm.vis.rave2line": {
+          "properties": {
+            "lineWithPoints.symbol": "donutPlus",
+            "interpolate": "cardinal",
+            "valueLabels.visible": true
+          }
+        },
+        "com.ibm.vis.rave2bundlearea": {
+          "properties": {
+            "widget.legend.display": false,
+            "widget.legend.position": "top",
+            "widget.legend.splitter": false,
+            "widget.legend.titleVisible": false,
+            "itemAxis.title.visible": false,
+            "itemAxis.ticks.labels.visible": true,
+            "itemAxis.line.visible": true,
+            "itemAxis.gridLines.visible": true,
+            "itemAxis.gridLines.dashPattern.type": "dot",
+            "valueAxis.title.visible": false,
+            "valueAxis.line.visible": false,
+            "valueAxis.ticks.labels.visible": false,
+            "valueAxis.gridLines.dashPattern.type": "dot",
+            "lineWithPoints.symbol": "donutPlus",
+            "interpolate": "cardinal",
+            "area.opacity": 0.5,
+            "area.opacity.fill": 0.5,
+            "valueLabels.visible": true
+          }
+        },
+        "com.ibm.vis.rave2bundlebar": {
+          "properties": {
+            "valueLabels.visible": true,
+            "itemAxis.ticks.labels.alignment": "left"
+          }
+        },
+        "com.ibm.vis.rave2bundlecolumn": {
+          "properties": {
+            "valueLabels.visible": false
+          }
+        },
+        "com.ibm.vis.rave2bundlepie": {
+          "properties": {
+            "inner.label.title": {
+              "translationTable": {
+                "Default": " "
+              }
+            }
+          }
+        }
+      }
+    },
+    "mdv": {
+      "genericProperties": {
+        "displayMode": "grid",
+        "drawBorderLines": false,
+        "drawZebraStrips": false,
+        "showInnerBox": false,
+        "isColorCells": false,
+        "isGridEditable": true,
+        "boldConsolidation": false,
+        "abbreviateNumbers": false,
+        "useCellFontSize": true,
+        "isColumnIndent": true,
+        "isRowIndent": false,
+        "isShowExpandCollapseColumns": true,
+        "isShowExpandCollapseRows": true,
+        "UseColumnFocusedCharting": false
+      },
+      "sections": {
+        "RowHeader": {
+          "fillColor": "#1D546D",
+          "textColor": "#FFFFFF",
+          "selectionFillColor": "transparent"
+        },
+        "ColumnHeader": {
+          "selectionFillColor": "transparent"
+        },
+        "DataCell": {
+          "selectionFillColor": "transparent",
+          "selectionBorderColor": "color9"
+        },
+        "Spacer": {
+          "dividers": false
+        }
+      }
+    },
+    "syncTile": {
+      "data": {
+        "hasSearchBar": true,
+        "multipleSelection": false,
+        "showHeader": false,
+        "showIcon": false,
+        "isShowOverflowMenu": false
+      }
+    },
+    "singleCell": {
+      "genericProperties": {
+        "dimensionOverview_name": false,
+        "dimensionOverview_iconography": true,
+        "dimensionOverview_contextinformation": false,
+        "dimensionOverview_sectionheaders": false,
+        "dimensionOverview_sectionicons": false,
+        "displayMode": "grid",
+        "syncInfo": {
+
+        },
+        "boldConsolidation": true,
+        "CommonAxisRange": true,
+        "drawBorderLines": true,
+        "isColorCells": false,
+        "isColumnIndent": true,
+        "isMemberSelectUseRowHeader": false,
+        "isDeferredRecalcOnLeafUpdates": false,
+        "isRowIndent": true,
+        "isAutomaticRowHeaderWidth": true,
+        "isShowExpandCollapseRows": true,
+        "isShowExpandCollapseColumns": true,
+        "UseColumnFocusedCharting": false,
+        "rowHeaderWidthValue": {
+          "0": 131
+        },
+        "tableStyle": "gridSummary",
+        "isZoom80": null,
+        "hideColsHeader": true,
+        "hideRowsHeader": true,
+        "visible": false,
+        "isGridEditable": false,
+        "abbreviateNumbers": false,
+        "allowConsolidationTypeIn": false,
+        "showInnerBox": false,
+        "useCellFontSize": true
+      },
+      "sections": {
+        "DataCell": {
+          "font-size": "28"
+        }
+      }
+    },
+    "image": {
+      "objectFit": "contain"
+    },
+    "conditionalFormatting": {
+      "paletteId": "userPaletteColor",
+      "rules": [
+        {
+          "name": "Account emphasis sample",
+          "enabled": true,
+          "dimension": "Account",
+          "hierarchy": "Account",
+          "elements": [
+            "4999",
+            "6800",
+            "9000"
+          ],
+          "comparisonOperator": "=",
+          "operandType": "memberSelector",
+          "style": {
+            "textStyle": "font-weight: bold;"
+          }
+        },
+        {
+          "name": "Actuality emphasis",
+          "enabled": true,
+          "dimension": "Actuality",
+          "hierarchy": "Actuality",
+          "elements": [
+            "AC",
+            "BU",
+            "ACLY",
+            "AC-BU",
+            "AC-ACLY"
+          ],
+          "comparisonOperator": "=",
+          "operandType": "memberSelector",
+          "style": {
+                "borderColor": "border-color0"
+          }
+        }
+      ]
+    }
+  }
+}

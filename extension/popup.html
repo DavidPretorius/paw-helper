@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intito PAW helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header class="brand-bar">
+      <div class="brand-mark" aria-hidden="true">
+        <img src="assets/logo-theme-light.png" alt="" class="brand-logo brand-logo-light">
+        <img src="assets/logo-theme-dark.png" alt="" class="brand-logo brand-logo-dark">
+      </div>
+      <div class="brand-copy">
+        <p class="brand-kicker">Intito</p>
+        <h1 class="brand-title">PAW Helper 💖</h1>
+      </div>
+    </header>
+    <div class="top-actions">
+      <button id="refresh-connection-button" class="button button-ghost button-compact" type="button">Locate PAW</button>
+      <button id="board-spec-button" class="button button-ghost button-compact" type="button" hidden>Board Spec</button>
+    </div>
+    <p id="message-banner" class="message-banner" hidden></p>
+
+    <section id="extract-card" class="card">
+      <h2>Extract Theme From Web Page</h2>
+
+      <div class="action-row">
+        <button id="extract-button" class="button button-secondary" type="button">Extract Web Theme</button>
+      </div>
+    </section>
+
+    <section id="theme-card" class="card">
+      <div class="card-heading">
+        <h2>Theme Library</h2>
+      </div>
+      <label class="field">
+        <span>Theme</span>
+        <select id="theme-select"></select>
+      </label>
+      <div id="theme-preview" class="theme-preview">
+        <div class="theme-preview-group">
+          <p class="theme-preview-label">Backgrounds</p>
+          <div id="theme-preview-backgrounds" class="theme-swatches"></div>
+        </div>
+        <div class="theme-preview-group">
+          <p class="theme-preview-label">Accents</p>
+          <div id="theme-preview-accents" class="theme-swatches"></div>
+        </div>
+        <div class="theme-preview-group">
+          <p class="theme-preview-label">Cube View Text</p>
+          <div id="theme-preview-cube-text" class="theme-swatches"></div>
+        </div>
+        <div class="theme-preview-copy">
+          <p id="theme-preview-name" class="theme-preview-name">No theme selected</p>
+          <p id="theme-preview-fonts" class="theme-preview-fonts"></p>
+          <div id="theme-preview-logo-wrap" class="theme-preview-logo-wrap" hidden>
+            <p class="theme-preview-label">Logo</p>
+            <button id="theme-preview-logo-button" class="theme-preview-logo-box theme-preview-logo-button" type="button" title="Edit logo URL">
+              <img id="theme-preview-logo" class="theme-preview-logo" alt="Theme logo preview">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <p id="theme-description" class="hint" hidden></p>
+      <div id="theme-file-actions-scrape" class="theme-file-actions-scrape" hidden>
+        <div class="icon-actions">
+          <button id="download-button-scrape" class="icon-button" type="button" aria-label="Download theme" title="Download theme" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <button id="upload-button-scrape" class="icon-button" type="button" aria-label="Upload theme" title="Upload theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21V10m0 0 4 4m-4-4-4 4M5 4h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <button id="save-theme-button-scrape" class="icon-button" type="button" aria-label="Save edited theme as copy" title="Save edited theme as copy" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 4h11l3 3v13H5zM8 4v6h8V4M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <button id="delete-theme-button-scrape" class="icon-button" type="button" aria-label="Delete theme" title="Delete theme" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16M9 7V5h6v2m-8 0 1 12h8l1-12M10 10v6m4-6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="theme-apply-controls">
+        <div class="action-row action-row-spaced paw-theme-actions">
+          <button id="extract-paw-button" class="button button-ghost paw-extract-button" type="button" disabled>Extract PAW Theme</button>
+          <button id="theme-button" class="button button-secondary paw-apply-button" type="button">Apply Theme</button>
+        </div>
+        <div class="advanced-actions">
+          <button id="advanced-toggle" class="inline-link" type="button" aria-expanded="false">Show advanced options</button>
+          <div class="icon-actions">
+            <button id="download-button" class="icon-button" type="button" aria-label="Download theme" title="Download theme" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button id="upload-button" class="icon-button" type="button" aria-label="Upload theme" title="Upload theme">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21V10m0 0 4 4m-4-4-4 4M5 4h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button id="save-theme-button" class="icon-button" type="button" aria-label="Save edited theme as copy" title="Save edited theme as copy" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 4h11l3 3v13H5zM8 4v6h8V4M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button id="delete-theme-button" class="icon-button" type="button" aria-label="Delete theme" title="Delete theme" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h16M9 7V5h6v2m-8 0 1 12h8l1-12M10 10v6m4-6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="advanced-options" class="advanced-options" hidden>
+          <h3 class="subsection-title">Apply Options</h3>
+          <div class="checkbox-grid">
+            <label class="checkbox-option"><input id="option-board-properties" type="checkbox" checked> <span>Board properties</span></label>
+            <label class="checkbox-option"><input id="option-canvas" type="checkbox" checked> <span>Dashboard and tab backgrounds</span></label>
+            <label class="checkbox-option"><input id="option-custom-colors" type="checkbox" checked> <span>Custom color palette</span></label>
+            <label class="checkbox-option"><input id="option-typography" type="checkbox" checked> <span>Typography</span></label>
+            <label class="checkbox-option"><input id="option-chart-styling" type="checkbox" checked> <span>Chart styling</span></label>
+            <label class="checkbox-option"><input id="option-chart-axis-titles" type="checkbox"> <span>Generate chart titles from axis</span></label>
+            <label class="checkbox-option"><input id="option-cube-view-shell" type="checkbox" checked> <span>Cube view shell and generic settings</span></label>
+            <label class="checkbox-option"><input id="option-single-cell" type="checkbox" checked> <span>Single cell settings</span></label>
+            <label class="checkbox-option"><input id="option-grid-rows" type="checkbox" checked> <span>Grid rows</span></label>
+            <label class="checkbox-option"><input id="option-grid-columns" type="checkbox" checked> <span>Grid columns</span></label>
+            <label class="checkbox-option"><input id="option-grid-data" type="checkbox" checked> <span>Grid data</span></label>
+            <label class="checkbox-option"><input id="option-remove-conditional-formatting" type="checkbox"> <span>Remove cond. formatting</span></label>
+            <label class="checkbox-option"><input id="option-conditional-formatting" type="checkbox" checked> <span>Conditional formatting</span></label>
+            <label class="checkbox-option"><input id="option-sync-tiles" type="checkbox" checked> <span>Sync tiles</span></label>
+            <label class="checkbox-option"><input id="option-logo" type="checkbox" checked> <span>Logo</span></label>
+            <label class="checkbox-option"><input id="option-widgets" type="checkbox" checked> <span>Text, buttons, shapes, and selectors</span></label>
+            <label class="checkbox-option"><input id="option-auto-align-rows" type="checkbox" checked> <span>Auto-align near rows (Y)</span></label>
+            <label class="checkbox-option"><input id="option-auto-equalize-heights" type="checkbox" checked> <span>Equalize near row heights</span></label>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <input id="upload-theme-file" type="file" accept=".json,application/json" hidden>
+
+  <dialog id="board-spec-dialog" class="spec-dialog">
+    <form method="dialog" class="spec-dialog-card">
+      <div class="card-heading">
+        <h2>Board Spec</h2>
+        <div class="action-row">
+          <button id="board-spec-copy-button" class="button button-ghost button-compact action-inline" type="button">Copy</button>
+          <button id="board-spec-apply-button" class="button button-secondary button-compact action-inline" type="button">Apply</button>
+          <button class="button button-ghost button-compact action-inline" type="submit">Close</button>
+        </div>
+      </div>
+      <textarea id="board-spec-content" class="spec-content spec-editor" spellcheck="false">Loading...</textarea>
+    </form>
+  </dialog>
+
+  <dialog id="theme-color-dialog" class="spec-dialog theme-color-dialog">
+    <form method="dialog" class="spec-dialog-card theme-color-card">
+      <div class="card-heading">
+        <h2>Edit Color</h2>
+        <div class="action-row">
+          <button id="theme-color-cancel-button" class="button button-ghost button-compact action-inline" type="button">Cancel</button>
+          <button id="theme-color-apply-button" class="button button-secondary button-compact action-inline" type="button">Apply</button>
+        </div>
+      </div>
+      <div class="theme-color-editor">
+        <label class="field">
+          <span>HEX</span>
+          <input id="theme-color-hex-input" type="text" inputmode="text" spellcheck="false" autocomplete="off" placeholder="#000000">
+        </label>
+        <label class="field">
+          <span>Picker</span>
+          <input id="theme-color-picker-input" type="color">
+        </label>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="theme-logo-dialog" class="spec-dialog theme-color-dialog">
+    <form method="dialog" class="spec-dialog-card theme-color-card">
+      <div class="card-heading">
+        <h2>Edit Logo</h2>
+        <div class="action-row">
+          <button id="theme-logo-cancel-button" class="button button-ghost button-compact action-inline" type="button">Cancel</button>
+          <button id="theme-logo-apply-button" class="button button-secondary button-compact action-inline" type="button">Apply</button>
+        </div>
+      </div>
+      <div class="theme-color-editor theme-logo-editor">
+        <label class="field theme-logo-field">
+          <span>Logo URL</span>
+          <input id="theme-logo-url-input" type="text" inputmode="url" spellcheck="false" autocomplete="off" placeholder="https://example.com/logo.png">
+        </label>
+      </div>
+      <p class="hint">Paste a direct image URL. Leave blank to remove the logo.</p>
+    </form>
+  </dialog>
+
+  <script src="popup.js"></script>
+</body>
+</html>

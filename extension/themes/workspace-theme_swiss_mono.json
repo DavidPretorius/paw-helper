@@ -1,0 +1,305 @@
+{
+  "name": "Swiss Mono",
+  "baseTheme": "carbonGrey10",
+  "properties": {
+    "defaultLocale": "Default",
+    "fredIsRed": true,
+    "defaultZoom": "fitWidth"
+  },
+  "layout": {
+    "pageSize": {
+      "width": 1750,
+      "height": 900
+    },
+    "layoutPositioning": "absolute",
+    "fitPage": false
+  },
+  "authoringPalette": {
+    "backgrounds": {
+      "primary": "#FAFAFA",
+      "secondary": "#FFFFFF"
+    },
+    "accents": [
+      "#000000",
+      "#333333",
+      "#D50000",
+      "#666666",
+      "#999999",
+      "#1A1A1A",
+      "#B71C1C",
+      "#424242"
+    ]
+  },
+  "semantic": {
+    "backgrounds": {
+      "dashboard": "#FAFAFA",
+      "tab": "#FAFAFA",
+      "surface": "#FFFFFF",
+      "surfaceAlt": "#F5F5F5",
+      "rowHeader": "#1A1A1A",
+      "columnHeader": "#1A1A1A",
+      "data": "#FFFFFF",
+      "spacer": "#FFFFFF",
+      "grid": "transparent",
+      "syncTile": "transparent",
+      "shape": "#FFFFFF"
+    },
+    "neutrals": {
+      "border": "#D0D0D0",
+      "text": "#000000",
+      "mutedText": "#757575",
+      "headerText": "#424242",
+      "appBar": "#000000",
+      "ghostBorder": "#9E9E9E"
+    },
+    "accents": {
+      "primary": "#000000",
+      "secondary": "#333333",
+      "tertiary": "#666666",
+      "interactive": "#000000",
+      "highlight": "#EEEEEE",
+      "selection": "#E0E0E0",
+      "negative": "#D50000",
+      "chartSeries": [
+        "#000000",
+        "#D50000",
+        "#666666",
+        "#B71C1C",
+        "#333333",
+        "#999999",
+        "#424242"
+      ]
+    },
+    "typography": {
+      "fonts": {
+        "body": "Poppins-Light",
+        "ui": "Poppins-Regular",
+        "heading": "Poppins-Bold",
+        "grid": "IBMPlexSans-Light",
+        "rowHeader": "IBMPlexSans-Bold"
+      },
+      "scale": {
+        "widgetHeading": {
+          "size": "13px",
+          "weight": "700"
+        },
+        "body": {
+          "size": "13px",
+          "weight": "400"
+        },
+        "caption": {
+          "size": "11px",
+          "weight": "400"
+        },
+        "button": {
+          "size": "13px",
+          "weight": "500"
+        },
+        "selector": {
+          "size": "15px",
+          "weight": "400"
+        },
+        "gridCell": {
+          "size": "12px",
+          "weight": "400"
+        },
+        "kpiValue": {
+          "size": "20px",
+          "weight": "700"
+        }
+      }
+    },
+    "radii": {
+      "card": 0,
+      "button": 0,
+      "text": 0,
+      "shape": 0
+    }
+  },
+  "visuals": {
+    "liveByVisId": {
+      "pasinglecell": {
+        "showTitle": false,
+        "titleHtml": {
+          "translationTable": {
+            "Default": "\u003cdiv class=\"widgetTitlesmallTitle\"\u003e\u003cdiv class=\"textArea\"\u003e\u003cspan class=\"textFittedresponsiveColorresponsiveFontSizeresponsiveFontFamily\"\u003e\u003cp style=\"text-align: center;\"\u003e\u003cspan style=\"font-size: 16px;\"\u003eClick to edit title\u003c/span\u003e\u003c/p\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e"
+          }
+        },
+        "responsiveTitle": {
+          "translationTable": {
+            "Default": "Click to edit title"
+          }
+        },
+        "fillColor": "color1",
+        "borderColor": "color2",
+        "borderRadius": 0
+      },
+      "pacubeviewer": {
+        "showTitle": false,
+        "fillColor": "color1",
+        "borderColor": "color2",
+        "borderRadius": 0
+      }
+    },
+    "charts": {
+      "defaults": {
+        "showTitle": false,
+        "properties": {
+          "widget.legend.position": "top",
+          "widget.legend.splitter": false,
+          "widget.legend.titleVisible": false
+        }
+      },
+      "cartesianDefaults": {
+        "properties": {
+          "itemAxis.title.visible": true,
+          "valueAxis.title.visible": true,
+          "itemAxis.gridLines.visible": false,
+          "itemAxis.ticks.labels.visible": true,
+          "valueAxis.ticks.labels.visible": true,
+          "itemAxis.line.visible": true,
+          "valueAxis.line.visible": true,
+          "valueAxis.gridLines.dashPattern.type": "solid",
+          "itemAxis.gridLines.dashPattern.type": "solid"
+        }
+      },
+      "pieDefaults": {
+        "globalFormat": {
+          "ZerosOption": "AUTO",
+          "ScalingFactor": 1,
+          "Notation": "COMPACTSHORT",
+          "Units": {
+            "UnitType": "BASE"
+          },
+          "Precision": {
+            "MaxFraction": 0,
+            "MinFraction": 0
+          },
+          "GroupingStrategy": "AUTO",
+          "SignDisplay": "AUTO",
+          "Locale": "en",
+          "selectedFormat": "none"
+        },
+        "properties": {
+          "widget.legend.position": "bottom",
+          "donut.hole.radius": 0,
+          "label.percentage": true,
+          "labels.visible": true
+        }
+      },
+      "byVisId": {
+        "com.ibm.vis.rave2line": {
+          "properties": {
+            "lineWithPoints.symbol": "circle",
+            "interpolate": "linear",
+            "valueLabels.visible": false
+          }
+        },
+        "com.ibm.vis.rave2bundlearea": {
+          "properties": {
+            "widget.legend.display": true,
+            "lineWithPoints.symbol": "circle",
+            "interpolate": "linear",
+            "valueLabels.visible": false
+          }
+        },
+        "com.ibm.vis.rave2bundlebar": {
+          "properties": {
+            "valueLabels.visible": true,
+            "itemAxis.ticks.labels.alignment": "left"
+          }
+        },
+        "com.ibm.vis.rave2bundlecolumn": {
+          "properties": {
+            "valueLabels.visible": false
+          }
+        },
+        "com.ibm.vis.rave2bundlepie": {
+          "properties": {
+            "inner.label.title": {
+              "translationTable": {
+                "Default": " "
+              }
+            }
+          }
+        }
+      }
+    },
+    "mdv": {
+      "genericProperties": {
+        "displayMode": "grid",
+        "drawBorderLines": true,
+        "drawZebraStrips": false,
+        "showInnerBox": true,
+        "isColorCells": false,
+        "isGridEditable": true,
+        "boldConsolidation": true,
+        "abbreviateNumbers": false,
+        "useCellFontSize": true,
+        "isColumnIndent": false,
+        "isRowIndent": true,
+        "isShowExpandCollapseColumns": true,
+        "isShowExpandCollapseRows": true,
+        "UseColumnFocusedCharting": false
+      }
+    },
+    "syncTile": {
+      "data": {
+        "hasSearchBar": true,
+        "multipleSelection": false,
+        "showHeader": true,
+        "showIcon": false,
+        "isShowOverflowMenu": false
+      }
+    },
+    "singleCell": {
+      "genericProperties": {
+        "dimensionOverview_name": false,
+        "dimensionOverview_iconography": false,
+        "dimensionOverview_contextinformation": false,
+        "dimensionOverview_sectionheaders": false,
+        "dimensionOverview_sectionicons": false,
+        "displayMode": "grid",
+        "syncInfo": {},
+        "boldConsolidation": true,
+        "CommonAxisRange": true,
+        "drawBorderLines": true,
+        "isColorCells": false,
+        "isColumnIndent": false,
+        "isMemberSelectUseRowHeader": false,
+        "isDeferredRecalcOnLeafUpdates": false,
+        "isRowIndent": true,
+        "isAutomaticRowHeaderWidth": true,
+        "isShowExpandCollapseRows": true,
+        "isShowExpandCollapseColumns": true,
+        "UseColumnFocusedCharting": false,
+        "rowHeaderWidthValue": {
+          "0": 120
+        },
+        "tableStyle": "gridSummary",
+        "isZoom80": null,
+        "hideColsHeader": true,
+        "hideRowsHeader": true,
+        "visible": false,
+        "isGridEditable": false,
+        "abbreviateNumbers": false,
+        "allowConsolidationTypeIn": false,
+        "showInnerBox": false,
+        "useCellFontSize": true
+      },
+      "sections": {
+        "DataCell": {
+          "font-size": "26"
+        }
+      }
+    },
+    "image": {
+      "objectFit": "contain"
+    },
+    "conditionalFormatting": {
+      "paletteId": "userPaletteColor",
+
+      "rules": []
+    }
+  }
+}

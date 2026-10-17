@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "PAW Workbook Helper",
+  "version": "0.8.1",
+  "description": "Import IBM Planning Analytics Workspace books, extract themes from websites or PAW workbooks, and apply or edit workbook themes.",
+  "icons": {
+    "16": "assets/icon-light-16.png",
+    "32": "assets/icon-light-32.png",
+    "48": "assets/icon-light-48.png",
+    "128": "assets/icon-light-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "PAW Workbook Helper",
+    "default_icon": {
+      "16": "assets/icon-light-16.png",
+      "32": "assets/icon-light-32.png",
+      "48": "assets/icon-light-48.png",
+      "128": "assets/icon-light-128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "page-bridge.js",
+        "assets/logo-theme-light.png",
+        "assets/logo-theme-dark.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

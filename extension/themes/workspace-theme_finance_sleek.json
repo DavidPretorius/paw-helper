@@ -1,0 +1,340 @@
+{
+  "name": "Sleek Finance",
+  "baseTheme": "carbonGrey10",
+  "properties": {
+    "defaultLocale": "Default",
+    "fredIsRed": true,
+    "defaultZoom": "1"
+  },
+  "layout": {
+    "pageSize": {
+      "width": 1750,
+      "height": 900
+    },
+    "layoutPositioning": "absolute",
+    "fitPage": false
+  },
+  "authoringPalette": {
+    "backgrounds": {
+      "primary": "#F4F4F4",
+      "secondary": "#FFFFFF"
+    },
+    "accents": [
+      "#006466",
+      "#065A60",
+      "#0B525B",
+      "#144552",
+      "#1B3A4B",
+      "#212F45",
+      "#272640",
+      "#312244",
+      "#3E1F47",
+      "#4D194D"
+    ]
+  },
+  "semantic": {
+    "backgrounds": {
+      "dashboard": "#F4F4F4",
+      "tab": "#F4F4F4",
+      "surface": "#FFFFFF",
+      "surfaceAlt": "#F4F4F4",
+      "rowHeader": "#006466",
+      "columnHeader": "#006466",
+      "data": "#FFFFFF",
+      "spacer": "#FFFFFF",
+      "grid": "transparent",
+      "syncTile": "transparent",
+      "shape": "#FFFFFF"
+    },
+    "neutrals": {
+      "border": "#E0E0E0",
+      "text": "#161616",
+      "mutedText": "#8D8D8D",
+      "headerText": "#525252",
+      "appBar": "#161616",
+      "ghostBorder": "#8D8D8D"
+    },
+    "accents": {
+      "primary": "#006466",
+      "secondary": "#144552",
+      "tertiary": "#312244",
+      "interactive": "#065A60",
+      "highlight": "#0B525B",
+      "selection": "#1B3A4B",
+      "negative": "#FF1519",
+      "chartSeries": [
+        "#006466",
+        "#065A60",
+        "#0B525B",
+        "#144552",
+        "#1B3A4B",
+        "#212F45",
+        "#272640",
+        "#312244"
+      ]
+    },
+    "typography": {
+      "fonts": {
+        "body": "Poppins-Light",
+        "ui": "Poppins-Regular",
+        "heading": "Poppins-Bold",
+        "grid": "IBMPlexSans-Light",
+        "rowHeader": "IBMPlexSans-Regular"
+      },
+      "scale": {
+        "widgetHeading": {
+          "size": "14px",
+          "weight": "700"
+        },
+        "body": {
+          "size": "14px",
+          "weight": "400"
+        },
+        "caption": {
+          "size": "12px",
+          "weight": "400"
+        },
+        "button": {
+          "size": "14px",
+          "weight": "400"
+        },
+        "selector": {
+          "size": "16px",
+          "weight": "400"
+        },
+        "gridCell": {
+          "size": "12px",
+          "weight": "400"
+        },
+        "kpiValue": {
+          "size": "20px",
+          "weight": "400"
+        }
+      }
+    },
+    "radii": {
+      "card": 10,
+      "button": 60,
+      "text": 5,
+      "shape": 0
+    }
+  },
+  "visuals": {
+    "liveByVisId": {
+      "pasinglecell": {
+        "showTitle": false,
+        "titleHtml": {
+          "translationTable": {
+            "Default": "\u003cdiv class=\"widgetTitlesmallTitle\"\u003e\u003cdiv class=\"textArea\"\u003e\u003cspan class=\"textFittedresponsiveColorresponsiveFontSizeresponsiveFontFamily\"\u003e\u003cp style=\"text-align: center;\"\u003e\u003cspan style=\"font-size: 16px;\"\u003eClick to edit title\u003c/span\u003e\u003c/p\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e"
+          }
+        },
+        "responsiveTitle": {
+          "translationTable": {
+            "Default": "Click to edit title"
+          }
+        },
+        "fillColor": "color1",
+        "borderColor": "color2",
+        "borderRadius": 10
+      },
+      "com.ibm.vis.rave2line": {
+        "showTitle": true,
+        "properties": {
+          "widget.legend.position": "top",
+          "widget.legend.splitter": false,
+          "widget.legend.titleVisible": false,
+          "itemAxis.title.visible": false,
+          "itemAxis.ticks.labels.visible": true,
+          "itemAxis.line.visible": true,
+          "itemAxis.gridLines.visible": true,
+          "itemAxis.gridLines.dashPattern.type": "dot",
+          "valueAxis.title.visible": false,
+          "valueAxis.line.visible": true,
+          "valueAxis.ticks.labels.visible": true,
+          "valueAxis.gridLines.dashPattern.type": "dot",
+          "lineWithPoints.symbol": "donutPlus",
+          "interpolate": "cardinal",
+          "valueLabels.visible": true
+        }
+      },
+      "com.ibm.vis.rave2bundlearea": {
+        "showTitle": true,
+        "properties": {
+          "widget.legend.display": false,
+          "widget.legend.position": "top",
+          "widget.legend.splitter": false,
+          "widget.legend.titleVisible": false,
+          "itemAxis.title.visible": false,
+          "itemAxis.ticks.labels.visible": true,
+          "itemAxis.line.visible": true,
+          "itemAxis.gridLines.visible": true,
+          "itemAxis.gridLines.dashPattern.type": "dot",
+          "valueAxis.title.visible": false,
+          "valueAxis.line.visible": true,
+          "valueAxis.ticks.labels.visible": true,
+          "valueAxis.gridLines.dashPattern.type": "dot",
+          "lineWithPoints.symbol": "donutPlus",
+          "interpolate": "cardinal",
+          "valueLabels.visible": true
+        }
+      },
+      "com.ibm.vis.rave2bundlebar": {
+        "showTitle": true,
+        "properties": {
+          "widget.legend.position": "top",
+          "widget.legend.splitter": false,
+          "widget.legend.titleVisible": false,
+          "itemAxis.title.visible": false,
+          "itemAxis.ticks.labels.visible": true,
+          "itemAxis.line.visible": true,
+          "itemAxis.gridLines.visible": true,
+          "itemAxis.gridLines.dashPattern.type": "dot",
+          "valueAxis.title.visible": false,
+          "valueAxis.line.visible": true,
+          "valueAxis.ticks.labels.visible": true,
+          "valueAxis.gridLines.dashPattern.type": "dot",
+          "valueLabels.visible": true,
+          "itemAxis.ticks.labels.alignment": "left"
+        }
+      },
+      "com.ibm.vis.rave2bundlecolumn": {
+        "showTitle": true,
+        "properties": {
+          "widget.legend.position": "top",
+          "widget.legend.splitter": false,
+          "widget.legend.titleVisible": false,
+          "itemAxis.title.visible": false,
+          "itemAxis.ticks.labels.visible": true,
+          "itemAxis.line.visible": true,
+          "itemAxis.gridLines.visible": true,
+          "itemAxis.gridLines.dashPattern.type": "dot",
+          "valueAxis.title.visible": false,
+          "valueAxis.line.visible": true,
+          "valueAxis.ticks.labels.visible": true,
+          "valueAxis.gridLines.dashPattern.type": "dot",
+          "valueLabels.visible": false
+        }
+      },
+      "com.ibm.vis.rave2bundlepie": {
+        "showTitle": true,
+        "globalFormat": {
+          "ZerosOption": "AUTO",
+          "ScalingFactor": 1,
+          "Notation": "COMPACTSHORT",
+          "Units": {
+            "UnitType": "BASE"
+          },
+          "Precision": {
+            "MaxFraction": 1,
+            "MinFraction": 1
+          },
+          "GroupingStrategy": "AUTO",
+          "SignDisplay": "AUTO",
+          "Locale": "en",
+          "selectedFormat": "none"
+        },
+        "properties": {
+          "widget.legend.position": "bottom",
+          "donut.hole.radius": 0.7,
+          "label.percentage": true,
+          "labels.visible": true,
+          "inner.label.title": {
+            "translationTable": {
+              "Default": " "
+            }
+          }
+        }
+      }
+    },
+    "mdv": {
+      "genericProperties": {
+        "displayMode": "grid",
+        "drawBorderLines": false,
+        "drawZebraStrips": false,
+        "showInnerBox": false,
+        "isColorCells": false,
+        "isGridEditable": true,
+        "boldConsolidation": false,
+        "abbreviateNumbers": false,
+        "useCellFontSize": true,
+        "isColumnIndent": true,
+        "isRowIndent": false,
+        "isShowExpandCollapseColumns": true,
+        "isShowExpandCollapseRows": true,
+        "UseColumnFocusedCharting": false
+      }
+    },
+    "syncTile": {
+      "data": {
+        "hasSearchBar": true,
+        "multipleSelection": false,
+        "showHeader": false,
+        "showIcon": false,
+        "isShowOverflowMenu": false
+      }
+    },
+    "singleCell": {
+      "genericProperties": {
+        "dimensionOverview_name": false,
+        "dimensionOverview_iconography": true,
+        "dimensionOverview_contextinformation": false,
+        "dimensionOverview_sectionheaders": false,
+        "dimensionOverview_sectionicons": false,
+        "displayMode": "grid",
+        "syncInfo": {
+
+        },
+        "boldConsolidation": true,
+        "CommonAxisRange": true,
+        "drawBorderLines": true,
+        "isColorCells": false,
+        "isColumnIndent": true,
+        "isMemberSelectUseRowHeader": false,
+        "isDeferredRecalcOnLeafUpdates": false,
+        "isRowIndent": true,
+        "isAutomaticRowHeaderWidth": true,
+        "isShowExpandCollapseRows": true,
+        "isShowExpandCollapseColumns": true,
+        "UseColumnFocusedCharting": false,
+        "rowHeaderWidthValue": {
+          "0": 131
+        },
+        "tableStyle": "gridSummary",
+        "isZoom80": null,
+        "hideColsHeader": true,
+        "hideRowsHeader": true,
+        "visible": false,
+        "isGridEditable": false,
+        "abbreviateNumbers": false,
+        "allowConsolidationTypeIn": false,
+        "showInnerBox": false,
+        "useCellFontSize": true
+      },
+      "sections": {
+        "DataCell": {
+          "font-size": "28"
+        }
+      }
+    },
+    "image": {
+      "objectFit": "contain"
+    },
+    "conditionalFormatting": {
+      "paletteId": "userPaletteColor",
+
+      "rules": [
+        {
+          "name": "Account emphasis",
+          "enabled": true,
+          "dimension": "Account",
+          "hierarchy": "Account",
+          "elements": [
+            "4999"
+          ],
+          "comparisonOperator": "=",
+          "operandType": "memberSelector"
+        }
+      ]
+    }
+  }
+}
