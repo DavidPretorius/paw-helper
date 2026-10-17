@@ -45,14 +45,14 @@ extension
    - status and error messages appear inline in the Connection area instead of a separate activity panel
 5. For webpage theme extraction:
    - open any webpage
-   - click `Generate Theme Draft`
+   - click `Extract Web Theme`
    - the generated theme is added to the theme selector as a saved theme
    - saved generated themes can be deleted from the Theme Library
    - later, open a PAW page, select that saved theme, and click `Apply Theme`
-   - click `Download Generated Theme` if you also want the JSON file
+   - click the **Download theme** down-arrow icon if you also want the JSON file
 6. For PAW workbook style extraction:
    - open a PAW workbook / board
-   - click `Extract From Current PAW Book`
+   - click `Extract PAW Theme`
    - the extracted theme is added to the same Theme Library as a saved theme
    - chart palette and palette index hints are captured by chart widget id (including charts that intentionally have no explicit palette) for best round-trip fidelity on the same workbook
    - select it and click `Apply Theme` on another board when needed
